@@ -60,4 +60,4 @@ Considerações
 -	Este projeto foi criado com fins acadêmicos e foi mantido o logo original nas tags <img> de forma a respeitar as especificações do projeto da faculdade.
 -	Qualquer modificação ou adaptação para uso comercial ou em outros contextos deve considerar licenciamento e atribuição adequados.
 Licença
-Este projeto está licenciado sob a **[MIT License]()**.
+Este projeto está licenciado sob a **[MIT License](portal-chamados/LICENSE)**.
