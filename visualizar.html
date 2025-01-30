@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualização de chamado</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/ekko-lightbox/ekko-lightbox.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/codemirror/codemirror.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/codemirror/theme/monokai.css">
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body class="hold-transition sidebar-mini sidebar-collapse">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="chamados.html" class="nav-link">Consultar Chamados</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" href="../portal/acesso/login.html" role="button">
+          <i style='color: red;' class="fas fa-door-open"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed">
+    <!-- Brand Logo -->
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+                    <img src="../portal/img/images.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nome Completo</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="abertura.html" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Abrir Chamado
+                <span class="right badge badge-success">Novo +</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="chamados.html" class="nav-link">
+              <i class="nav-icon fas fa-inbox"></i>
+              <p>
+                Consultar Chamado
+              </p>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                Procurar Chamado
+              </p>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Visualização de chamado n° <b>39327376</b></h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Problema de Teste</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+          <a href="abertura.html" class="btn btn-primary btn-block mb-3">Abrir chamado +</a>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Caixa de Entrada</h3>
+            </div>
+            <div class="card-body p-0">
+              <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a href="chamados.html" class="nav-link">
+                    <i class="fas fa-hourglass"></i> Em andamento
+                    <span class="badge bg-secondary float-right">1</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a href="chamados_concluidos.html" class="nav-link">
+                    <i class="far fa-envelope"></i> Concluídos
+                    <span class="badge bg-success float-right">1</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+          <!-- /.col -->
+        <div class="col-md-10">
+          <div class="card card-green card-outline">
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+              <div class="mailbox-read-info">
+                <h5>Problema de Teste</h5>
+                <h6>From: email@email.com
+                  <span class="mailbox-read-time float-right">30 de Janeiro 2025 11:12</span></h6>
+              </div>
+              <!-- /.mailbox-read-info -->
+
+              <!-- /.mailbox-controls -->
+              <div class="mailbox-read-message">
+                <p>Bom dia,</p>
+                <p><br></p>
+                <p>Apenas um chamado de teste.</p>
+                <p><br></p>
+                <p>Att.,</p>              
+              </div>
+              <!-- /.mailbox-read-message -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer bg-white">
+              <ul class="mailbox-attachments d-flex align-items-stretch clearfix">
+              </ul>
+            </div>
+            <!-- /.card-footer -->
+            <div class="card-footer">
+              <div class="float-right">
+                <form id="concluir">
+              
+              <button name="update" class="btn btn-outline-success" type="submit"><i class="fas fa-check"></i> Encerrar Chamado</button>
+              <template id="my-template">
+                                                <swal-title>
+                                                    Avalie este chamado!
+                                                </swal-title>
+                                                <swal-icon type="info" color="cyan"></swal-icon>
+                                                <swal-html>
+                                                <div class="estrelas form-group">
+                                                        <input type="radio" id="vazio" name="estrela" value="" checked>
+
+                                                        <label for="estrela_um"><i class="fa"></i></label>
+                                                        <input type="radio" id="estrela_um" name="estrela" class="estrela" value="1">
+
+                                                        <label for="estrela_dois"><i class="fa"></i></label>
+                                                        <input type="radio" id="estrela_dois" name="estrela" class="estrela" value="2">
+
+                                                        <label for="estrela_tres"><i class="fa"></i></label>
+                                                        <input type="radio" id="estrela_tres" name="estrela" class="estrela" value="3">
+
+                                                        <label for="estrela_quatro"><i class="fa"></i></label>
+                                                        <input type="radio" id="estrela_quatro" name="estrela" class="estrela" value="4">
+
+                                                        <label for="estrela_cinco"><i class="fa"></i></label>
+                                                        <input type="radio" id="estrela_cinco" name="estrela" class="estrela" value="5">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-group">
+                                                            <label for="inputMessage">Escreva um pouco sobre o porquê
+                                                                dessa classificação...</label>
+                                                            <textarea id="inputMessage" class="form-control"
+                                                                name="comentario" rows="3" maxlength="400"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <small><span class="caracteres">400</span> Restantes</small>
+                                                        </div>
+                                                    </div>
+                                                </swal-html>
+                                                <swal-button type="confirm">
+                                                    Avaliar
+                                                </swal-button>
+                                                <swal-button type="cancel">
+                                                    Cancelar
+                                                </swal-button>
+                                                <swal-param name="allowEscapeKey" value="false" />
+                                                <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+                                                <swal-function-param name="didOpen"
+                                                    value="popup => console.log(popup)" />
+                                            </template>
+              </form>
+              </div>
+            </div>
+            <!-- /.card-footer -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      <div class="container-fluid">
+
+        <!-- Timelime example  -->
+        <div class="row">
+          <div class="col-md-12 ">
+            <!-- The time line -->
+            <div class="timeline timeline-inverse">
+              <!-- timeline time label -->
+              <div class="time-label">
+                <span class="bg-red">Quinta, 30 de Janeiro de 2025</span>
+              </div>
+              <!-- /.timeline-label -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-comment bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 11:10</span>
+                  <div class="timeline-header">email@email.com</div>
+                  <div class="timeline-body">
+                    <form class='form-group'>
+                    <textarea maxlength="3000" id="summernote" name="comentarios" class="form-control" style="height: 200px; display: block"></textarea>
+                  </div>
+                  <input style="border: none; background-color:white; text-align:center; display: none;" type="text" value="" name="numerochama">
+                  <input style="border: none; background-color:white; text-align:center; display: none;" type="text" value="email@email.com" name="email">
+                  <div class="timeline-footer">
+                    <input type="submit" class="btn btn-primary btn-sm" value="Enviar">
+                  </div>
+                  </form>
+                </div>
+              </div>
+                    <div>
+                    <div class='timeline-item'>
+                    <h3 class=' timeline-header no-border estrelas text-center' id='tol'>
+                      <label for='estrela1'><i class='fa'></i></label><input type='radio' id='estrela1' name='estrela' value='1'>
+                      <label for='estrela2'><i class='fa'></i></label><input type='radio' id='estrela2' name='estrela' value='2'>
+                      <label for='estrela3'><i class='fa'></i></label><input type='radio' id='estrela3' name='estrela' value='3'>
+                      <label for='estrela4'><i class='fa'></i></label><input type='radio' id='estrela4' name='estrela' value='4'>
+                      <label for='estrela5'><i class='fa'></i></label><input type='radio' id='estrela5' name='estrela' value='5'>
+                      <br><b>Muito bom!</b>
+                    </h3>
+                    </div>
+                    </div>
+              <div>
+                <i class="fas fa-envelope bg-red"></i>
+                <div class="timeline-item">
+                  <h3 class="timeline-header no-border"><b>Nome Completo</b> finalizou esse chamado em <b>30 de Janeiro às 11:10</b></h3>
+                </div>
+              </div>
+              <hr>
+                  <div>
+                    <i class='fas fa-comment bg-blue'></i>
+                    <div class='timeline-item'>
+                    <span class='time'><i class='fas fa-clock'></i>
+                      11:10
+                    </span>
+                    <div class='timeline-header'><b>Você comentou nesse chamado.</b></div>
+
+                  <div class='timeline-body'>
+                    <p>Bom dia,</p>
+                    <br>
+                    <p>Obrigado por responder!</p>
+                    <br>
+                    <p>Att.,</p>
+                  </div>
+                  <div class='timeline-footer'>
+                  <form class='form-group'>
+                    <input type='submit' class='btn btn-danger btn-sm' value='Excluir'>
+                    </form>
+                  </div>
+                </div>
+              </div>                                
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-envelope-open bg-green"></i>
+                <div class="timeline-item">
+                  <h3 class="timeline-header no-border"><b>Nome Completo</b> iniciou esse chamado em <b>30 de Janeiro 2025 às 11:10</b></h3>
+                </div>
+              </div>
+              <!-- END timeline item -->
+              <!-- timeline item -->
+              <div>
+                <i class="fas fa-clock bg-gray"></i>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+      </div>
+      <!-- /.timeline -->
+
+
+      </div>
+      <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!-- jQuery -->
+<script src="AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+<!-- Ekko Lightbox -->
+<script src="AdminLTE-3.2.0/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/filterizr/jquery.filterizr.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/codemirror/codemirror.js"></script>
+<script src="AdminLTE-3.2.0/plugins/codemirror/mode/css/css.js"></script>
+<script src="AdminLTE-3.2.0/plugins/codemirror/mode/xml/xml.js"></script>
+<script src="AdminLTE-3.2.0/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="concluir.js"></script>
+<script src="excluir.js"></script>
+<script src="AdminLTE-3.2.0/plugins/sweetalert2/sweetalert2.min.js"></script>
+<script>
+    $(function() {
+        // Summernote
+        $('#summernote').summernote({
+            toolbar: [
+                ["style", ["style"]],
+                ["font", ["bold", "underline", "italic", "clear"]],
+                ["fontname", ["fontname"]],
+                ["color", ["color"]],
+                ["para", ["ul", "ol", "paragraph"]],
+                //["table", ["table"]],
+                //["insert", ["link", "picture", "video"]],
+                ["view", ["fullscreen", "codeview", "help"]]
+            ],
+            disableDragAndDrop: true,
+            height: 150
+        });
+        // CodeMirror
+        CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+            mode: "htmlmixed",
+            theme: "monokai"
+        });
+    })
+</script>
+<script>
+$(document).on("input", "#inputMessage", function() {
+    var limite = 400;
+    var caracteresDigitados = $(this).val().length;
+    var caracteresRestantes = limite - caracteresDigitados;
+
+    $(".caracteres").text(caracteresRestantes);
+});
+</script>
+<style>
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa:before {
+    content: '\f005';
+    color: #FC0;
+}
+
+.estrelas input[type=radio]:checked~label i.fa:before {
+    color: #CCC;
+}
+
+#transform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+</body>
+</html>

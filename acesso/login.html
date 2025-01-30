@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Chamado</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <script src='https://www.google.com/recaptcha/api.js?hl=ptbr' async defer></script>
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- <div class="login-logo"> -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center" style="align-items: center;">
+    <img src="../img/unnamed.jpg" style="width: 300px; height: 120px;">
+  </div>
+  <!-- /.login-logo -->
+    <div class="card-body">
+    <div class="col-0 text-center align-items-center justify-content-center">
+    </div>
+      <p class="login-box-msg">Entre para continuar sua sessão.</p>
+      <form class='form-group'>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" name="email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Senha" name="senha">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>  
+        </div>
+        <br>
+        <div class="row" style="text-align: center; ">     
+          <!-- /.col -->
+          <div class="col-4">
+            <a href="/portal/index.html" class="btn btn-primary btn-block">Entrar</a>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+<br>
+<br>
+      <p class="mb-0">
+        <a href="registrar.html" class="text-center">Registre sua conta</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+<!-- jQuery -->
+<script src="AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+</body>
+</html>
+<style>
+    .CookieMessage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #121212;
+    z-index: 999;
+    display: none;
+    width: 100vw;
+  }
+  
+  .CookieMessage-content {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 12px;
+
+  }
+
+  .CookieMessage-content a{
+    color: white;
+  }
+
+  .CookieMessage-content p{
+    margin: 0 0 15px 0;
+    display: flex;
+  }
+  
+  .CookieMessage-button {
+    background: #00C2FF;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .CookieMessage-button:hover{
+    background: #5cd9ff;
+  }
+  #saiba{
+    text-decoration: underline;
+    margin-left: 3px;
+  }
+</style>

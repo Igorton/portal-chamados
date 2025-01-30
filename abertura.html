@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abertura de Chamados</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/dist/css/adminlte.min.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="AdminLTE-3.2.0/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- dropzonejs -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="hold-transition sidebar-mini sidebar-collapse">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="chamados.html" class="nav-link">Consultar Chamados</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" href="../portal/acesso/login.html" role="button">
+          <i style='color: red;' class="fas fa-door-open"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed">
+    <!-- Brand Logo -->
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+                    <img src="../portal/img/images.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nome Completo</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="abertura.html" class="nav-link active">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Abrir Chamado
+                <span class="right badge badge-success">Novo +</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="chamados.html" class="nav-link">
+              <i class="nav-icon fas fa-inbox"></i>
+              <p>
+                Consultar Chamado
+              </p>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                Procurar Chamado
+              </p>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Abertura</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Abertura</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Caixa de Entrada</h3>
+              </div>
+              <div class="card-body p-0">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item active">
+                    <a href="chamados.html" class="nav-link">
+                      <i class="fas fa-hourglass"></i> Em andamento
+                      <span class="badge bg-secondary float-right">0</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="chamados_concluidos.html" class="nav-link">
+                      <i class="far fa-envelope"></i> Concluídos
+                      <span class="badge bg-success float-right">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h3 class="card-title">Insira as informações necessárias para um novo chamado</h3>
+              </div>
+              <!-- /.card-header -->
+              <form class='form-group'>
+              <div class="card-body">
+                <div class="form-group">
+                  <input class="form-control" disabled value="email@email.com">
+                </div>
+                <div class="form-group">
+                    <select class="select2" name="copia" multiple="multiple" data-placeholder="Cc..." style="width: 100%;">
+                      <option value='email@email.com'>Email</option>
+                      <option value='email1@email.com'>Email1</option>
+                      <option value='email2@email.com'>Email2</option>
+                      <option value='email3@email.com'>Email3</option>
+                      <option value='email4@email.com'>Email4</option>
+                      <option value='email5@email.com'>Email5</option>
+                      <option value='email6@email.com'>Email6</option>
+                    </select> 
+                  </div>
+                  <input class="form-control" placeholder="Assunto" name="assunto">
+                  <div class="form-group" id="select">
+                  <div class="form-group" id="identificacao">
+                    <label>Problema</label>
+                    <select class="custom-select" name="select1" id="selec">
+                      <option selected disabled></option>
+                      <option id="infra">Infra</option>
+                      <option id="siste">Sistema</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" id="problema" style="display: block;">
+                    <label>Identificação do Problema <a data-placement="right" data-toggle="tooltip" data-html="true" title="" data-original-title="Identifique o problema.<br><small><b>*Se necessário, solicitar a inclusão de uma nova opção.</b></small>"><i class="fas fa-circle-question"></i></a></label>
+                    <select class="custom-select" name="select2" id="sele">
+                      <option selected disabled></option>
+                          <option id='1'>Problema 1</option>
+                          <option id='2'>Problema 2</option>
+                          <option id='3'>Problema 3</option>
+                          <option id='4'>Problema 4</option>
+                          <option id='5'>Problema 5</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="modulo" style="display: block;">
+                    <label>Módulos  <a data-placement="right" data-toggle="tooltip" data-html="true" title="" data-original-title="Identifique o módulo do problema selecionado.<br><small><b>*Se necessário, solicitar a inclusão de uma nova opção.</b></small>"><i class="fas fa-circle-question"></i></a></label>
+                    <select class="custom-select" name="selectmodulo" id="sel">
+                      <option selected disabled></option>
+                      <option>Módulo 1</option>
+                      <option>Módulo 2</option>
+                      <option>Módulo 3</option>
+                      <option>Módulo 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="compose-textarea" name="Chamado" class="form-control" style="height: 300px">
+                    </textarea>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <div class="float-right">
+                  <button type="submit" class="btn btn-success"><i class="far fa-envelope"></i> Enviar</button>
+                </div>
+                <a href="chamados.html" class="btn btn-danger"><i class="fas fa-times"></i> Descartar</a>
+              </div>
+              </form>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+<!-- Summernote -->
+<script src="AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- Select2 -->
+<script src="AdminLTE-3.2.0/plugins/select2/js/select2.full.min.js"></script>
+<!-- Page specific script -->
+<script>
+$(function() {
+        //Add text editor
+        $('#compose-textarea').summernote({
+            height: 300,
+            toolbar: [
+                ["style", ["style"]],
+                ["font", ["bold", "underline", "italic", "clear"]],
+                ["fontname", ["fontname"]],
+                ["color", ["color"]],
+                ["para", ["ul", "ol", "paragraph"]],
+                ["view", ["fullscreen", "codeview", "help"]]
+            ],
+            disableDragAndDrop: true
+        })
+
+    $('.select2').select2()
+    })
+</script>
+<script>
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<style>
+#select{
+    display: flex;
+    justify-content: space-around;
+}
+</style>
+</body>
+</html>
