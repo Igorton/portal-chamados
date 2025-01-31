@@ -2,6 +2,11 @@
 
 Este é um sistema de **Portal de Chamados**, desenvolvido para um projeto acadêmico, utilizando **PHP** e **JavaScript** para criação de chamados, fechamento de tickets, e coleta de feedback dos usuários. O sistema também permite adicionar comentários nos chamados e oferece uma interface interativa, com design aprimorado utilizando o **AdminLTE**, garantindo uma aparência limpa e moderna.
 
+## Pré-visualização
+
+Para o acesso, basta clicar em entrar, na visualização não é necessário as credenciais.
+- **[Portal Chamados](https://igorton.github.io/portal-chamados/acesso/login.html)**
+
 ## Funcionalidades
 
 - **Criação de Chamados**: Usuários podem abrir novos chamados detalhando seu problema ou solicitação.
